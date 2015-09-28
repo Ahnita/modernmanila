@@ -1,14 +1,103 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Modernmanila</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-kjljk
-<%= yield %>
+<html lang="en">
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+
+    <title>Moderne Manila</title>
+  
+    <!-- Fonts -->
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200,700' rel='stylesheet' type='text/css'>
+	
+    <!-- Custom Theme CSS -->
+    <link href="css/style.css" rel="stylesheet">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/prettyPhoto.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  	<%= csrf_meta_tags %>
+
+
+<!-- MAIN MENU -->   
+	
+	<div class="menu-header">
+		<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header page-scroll">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+						<i class="fa fa-bars"></i>
+					</button>
+					<a class="site-title" href="#index">
+					MODERNe MANILA <!-- site name -->
+					</a>
+				</div>
+
+				<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+				
+					<!-- Menu -->
+					<ul class="nav navbar-nav">
+						<li class="hidden"><a href="#top"></a></li> <!-- hidden item -->
+						<li class="page-scroll"><a href="#about">About</a></li>
+						<li class="page-scroll"><a href="#news">News</a></li>
+						<li class="page-scroll"><%= link_to "Galleries", static_pages_galleries_path %></li>
+						<li class="page-scroll"><%= link_to "Tips", static_pages_tips_path %></li>
+						<li class="page-scroll"><%= link_to "Maps", static_pages_maps_path %></li>
+						<li class="page-scroll"><%= link_to "Contact", static_pages_contact_path %></li>
+					</ul><!-- End Menu -->
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	
+	
+<!-- COPYRIGHT SECTION -->
+	
+	<section id="copyright" >
+		<div class="container">
+		
+			<!--Copyright Text -->
+			<div class="col-md-6">
+			<p>&copy;Ahn Bustamante 2015</p>
+			</div>
+			
+			<!-- Social Icons -->
+			<div class="col-md-6">
+				<p id="social">
+					<a href="https://www.facebook.com/ahnita6/"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/wahnderlush"><i class="fa fa-twitter"></i> </a>
+					<a href="https://ph.linkedin.com/in/ahnbustamante"><i class="fa fa-linkedin"></i></a>
+				</p>
+			</div>
+			
+		</div>
+	</section>
+	
+	
+    <!-- Core JavaScript Files -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	
+	<script type="text/javascript"  src="js/bootstrap.min.js"></script>
+	<script type="text/javascript"  src="js/jquery-1.10.2.js"></script>
+	<script type="text/javascript"  src="js/jquery.isotope.min.js"></script>
+	<script type="text/javascript"  src="js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript"  src="js/owl.carousel.js"></script>
+	<script type="text/javascript"  src="js/waypoints.min.js"></script>
+	<script type="text/javascript"  src="js/jquery.counterup.min.js"></script>
+	<script type="text/javascript"  src="js/jquery.easing.1.3.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/main.js"></script>
+	
+	
 </body>
 </html>

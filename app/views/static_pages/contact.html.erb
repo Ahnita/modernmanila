@@ -1,2 +1,49 @@
-<h1>StaticPages#contact</h1>
-<p>Find me in app/views/static_pages/contact.html.erb</p>
+<!-- CONTACTS SECTION -->
+
+	<section id="contacts" class="dark">
+		<div class="container">	
+			<div class="col-md-4">
+				
+				<!-- Contacts -->
+				<div id="info">
+					<h1 >GET IN <br/><span>TOUCH</span></h1>
+					
+					<!-- Contact 1 -->
+					<p>If you like this website and you wish to have your own, say hello!</p>
+					<p><i class="fa fa-phone"></i> +63 927 156 7264</p>
+					
+					<!-- Contact 2 -->
+					<p><i class="fa fa-envelope"></i> ahn@ahnbustamante.com</p>
+					
+					<!-- Contact 3 -->
+					<p><i class="fa fa-map-marker"></i> Makati, Philippines</p>
+					
+				</div><!-- End Contacts -->
+			</div>
+
+			<div class="col-md-8" >
+			
+				<!-- Contact Form -->
+				<form action="mail.php" method="post" class="animate-fadeIn">
+				
+					<!-- Name -->
+					<div class="col-md-6">
+						<input type="text" name="name" class="form-control" id="firstname" placeholder="Enter your name">
+					</div>
+					
+					<!-- Email -->
+					<div class="col-md-6">
+						<input type="text" name="email" class="form-control" id="email" placeholder="Enter your e-mail">
+					</div>
+
+					<!-- Message -->
+					<div class="col-md-12">
+						<textarea rows="10" cols="45" name="mess" class="form-control" id="message"  placeholder="Your message"></textarea>
+					</div>
+					
+					<!-- Send -->
+					<p><input class="button" type="submit" value="SEND LETTER"></p>
+				</form><!-- End Contact Form -->
+			</div>
+		</div>
+	</section>
