@@ -14,7 +14,6 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200,700' rel='stylesheet' type='text/css'>
 	
     <!-- Custom Theme CSS -->
-    <link href="css/style.css" rel="stylesheet">
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/owl.carousel.css" rel="stylesheet">
 	<link href="css/prettyPhoto.css" rel="stylesheet">
@@ -34,8 +33,7 @@
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
 						<i class="fa fa-bars"></i>
 					</button>
-					<a class="site-title" href="#index">
-					MODERNe MANILA <!-- site name -->
+					<h3><%= link_to "MODERNe MANILA", static_pages_index_path %></h3><!-- site name -->
 					</a>
 				</div>
 
@@ -44,8 +42,8 @@
 					<!-- Menu -->
 					<ul class="nav navbar-nav">
 						<li class="hidden"><a href="#top"></a></li> <!-- hidden item -->
-						<li class="page-scroll"><a href="#about">About</a></li>
-						<li class="page-scroll"><a href="#news">News</a></li>
+						<li class="page-scroll"><%= link_to "About", static_pages_index_path %></li>
+						<li class="page-scroll"><%= link_to "News", static_pages_galleries_path %></li>
 						<li class="page-scroll"><%= link_to "Galleries", static_pages_galleries_path %></li>
 						<li class="page-scroll"><%= link_to "Tips", static_pages_tips_path %></li>
 						<li class="page-scroll"><%= link_to "Maps", static_pages_maps_path %></li>
@@ -55,6 +53,8 @@
 			</div>
 		</nav>
 	</div>
+
+	<%= yield %>
 
 	
 	
