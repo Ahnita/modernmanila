@@ -93,7 +93,7 @@ div.pp_default .pp_nav .pp_pause{
 }
 
 div.pp_default a.pp_arrow_previous,div.pp_default a.pp_arrow_next{
-	background:url(../images/prettyPhoto/default/sprite.png) -31px -3px no-repeat;
+	background:url(/assets/images/prettyPhoto/default/sprite.png) -31px -3px no-repeat;
 	height:20px;
 	width:20px;
 	margin:4px 0 0;

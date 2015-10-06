@@ -1,5 +1,5 @@
 /* ------------------------------------------ */
-/* Created by GiaTheme
+
 
 * main
 * navigation
@@ -13,19 +13,13 @@
 	* button
 	* service block
 	* button
-	* quote
-	* testimonial
-	* progress bar
-	* counter
-	* pricing
 	* copyright
 * owl carousel
 * animate
 * media query
 
 /* ================================================== */
-@charset "utf-8";
-@import url(http://fonts.googleapis.com/css?family=Raleway:300,400,200,700);
+
 
 /* --------------------- MAIN --------------------- */
 
@@ -42,7 +36,7 @@ body {
     height: 100%;
     font-family: "Raleway", Helvetica,Arial,sans-serif;
     color: #736357;
-    background-color: #8b806c;
+    background-color: #fff;
 	line-height:24px;
 	text-align: justify;
 	font-weight:400;
@@ -90,22 +84,21 @@ a:hover {
 /* --------------------- NAVIGATION --------------------- */
 
 .menu-header {
-	background: #000; 
+	background:#000; 
 	position: fixed;
 	z-index: 9999;
 }
 
 .navbar {
 	border:none !important;
-	padding: 20px 10px 20px;
 }
 
 .navbar a {
-	color: #fff;
+	color:#8b806c;
 }
 
 .navbar-custom a {
-    color: #fff;
+    color: #736357;
 }
 
 .navbar-custom .nav li a {
@@ -116,7 +109,7 @@ a:hover {
 
 .navbar-custom .nav li a:focus {
 	outline: 0;
-	color: #fff;
+	color:#fff;
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li.active {
@@ -130,11 +123,11 @@ a:hover {
 }
 
 .page .nav .dropdown-menu  a {
-	color: #fff;
+	color:#fff;
 }
 
 .page .top-nav-collapse a {
-	color: #fff;
+	color:#fff;
 }
 
 .top-nav-collapse {
@@ -160,17 +153,17 @@ a:hover {
 /* --------------------- HEADER INTRO --------------------- */
 
 
-
 .intro {
-    display: table;
+	position: absolute;
+	display: inline-block;
     width: 100%;
-    height: auto;
+    height: 100%;
     padding: 100px 0;
     text-align: left;
     color: #fff;
-    background: url(../images/rise.jpg) no-repeat bottom center scroll;
+    background: image-url('rise.jpg') no-repeat top center fixed;
     background-color: #000;
-    -webkit-background-size: cover;
+    *-webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
@@ -188,6 +181,7 @@ a:hover {
 
 .intro-body h3 span {
 	color:#f3b233;
+	display: absolute;
 }
 
 .intro-text {
@@ -238,7 +232,8 @@ img.paintings {
 }
 
 .row {
-	padding: 50px;
+	display: block;
+	padding: 100px;
 	margin: 0 !important;
 }
 
@@ -277,15 +272,133 @@ section.dark {
 /* --------------------- MAP --------------------- */
 
 map {
-	display: inline-block;
-	padding: 100px;
-	margin: 0 auto 0 auto; 
-	height: 700px; 
-	width: 80%;
-	overflow:hidden;
+	margin: 0 auto;
+	padding: 50px 50px 50px 50px;
+
+	top: 30%;
+	left: 50%;
+}
+
+.row {
+	padding: 100px 50px 50px 50px;
+}
+
+#blog img {
+	width: auto;
+	height: 100%;
+}
+
+#blog p {
+	padding: 0 15px; 
+	margin-bottom:35px; 
+	text-align:center;
+}
+
+#blog .item {
+	text-align:center;
 }
 
 
+#blog .customNavigation {
+	float:right;
+	margin-top: 70px; 
+	z-index: 999; 
+	position:relative;
+}
+
+#blog-page .thumb {
+	width:100%; 
+	height:230px; 
+	overflow:hidden; 
+}
+
+#blog-page img {
+	width:100%; 
+}
+
+#blog-page .post {
+	margin-bottom:25px;
+}
+
+#blog-page .post h4 {
+	padding-top: 10px;
+}
+
+#blog-page .post h4 a, #blog-page .post-one h4 a {
+	color:#8b806c;
+	font-weight:bold;
+}
+#blog-page .post h4 a:hover, #blog-page .post-one h4 a:hover {
+	color:#f3b233;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+
+#blog-page .post-one .thumb {
+	width:350px; 
+	max-width:100%; 
+	height:230px; 
+	overflow:hidden; 
+	float:left; 
+	margin-right:25px;
+}
+
+#blog-page .fa, .page-title .fa {
+	color:#f3b233; 
+	margin: 0 15px;
+}
+
+#blog-page .fa:first-child {
+	margin-left:0;
+}
+  
+.thumb-resent {
+	width:226px; 
+	height:226px; 
+	overflow:hidden; 
+	border-radius:50%; 
+	margin:0 auto; 
+	margin-bottom:15px; 
+}
+
+.post .thumb {
+	width:100%; 
+	height:250px;
+	overflow:hidden;
+}
+
+.thumb-single {
+	width:100%; 
+	height:370px;
+	overflow:hidden;
+}
+
+.post-one {
+	width: 100%;
+	float: left;
+	margin-bottom: 35px;
+}
+
+.thumb .fa {
+	font-size:26px;
+}
+
+.comment, .replay {
+	border-top:1px solid #ddd;
+	padding:15px 0;
+}
+
+.comment img, .replay img {
+	width:100px !important; 
+	height:100px; 
+	border-radius:50%; 
+	float:left; 
+	margin-right:15px;
+	
+}
+
+.replay {margin-left:50px;}
 
 /* --------------------- PORTFOLIO --------------------- */
 
@@ -355,7 +468,7 @@ nav.primary li a.selected {
 .entry {
 	margin:15px 0;
 	text-align:center;
-	color:#f3b233;
+		color:#f3b233;
 }
 
 .entry img {
@@ -414,7 +527,13 @@ nav.primary li a.selected {
 	-moz-transition-property: -moz-transform, opacity;
 	transition-property: transform, opacity;
 }
-
+footer {
+   position: fixed;
+   bottom:0;
+   width:100%;
+   height:60px;   
+   background: #6cf;
+}
 
 /* --------------------- CONTACTS --------------------- */
 
@@ -592,38 +711,6 @@ a.more:hover {
 }
 
 
-/* --------------------- Quote --------------------- */
-
-
-#quote .container {
-	max-width: 100%;
-	width: 850px;
-	margin:0 auto;
-	font-style: italic;
-	font-size: 16px;
-	
-}
-
-#quote .fa {
-	color: #f3b233;
-	float: left;
-	font-size: 62px;
-	margin-right: 25px;
-}
-
-#quote p {
-	text-align: justify;
-	font-size: 18px;
-	font-weight: 300;
-	line-height:28px;
-}
-
-#quote span {
-	color:#fff; 
-	float: right; 
-}
-
-
 
 /* --------------------- Copyright --------------------- */
 
@@ -657,7 +744,7 @@ a.more:hover {
 /* --------------------- Owl Carousel Header --------------------- */
 
 .customNavigation a.prev-header {
-	position:absolute; 
+	position: absolute; 
 	left:0; 
 	top:50%; 
 	cursor:pointer;
@@ -666,7 +753,7 @@ a.more:hover {
 	color:rgba(255,255,255,0.5);
 	font-size:36px;
 	float: left;
-	z-index:9999;
+	z-index: 9999;
 }
 
 .customNavigation a.next-header {
@@ -678,7 +765,7 @@ a.more:hover {
 	color:rgba(255,255,255,0.5);
 	font-size:36px;
 	float: left; 
-	z-index:9999;
+	z-index: 9999;
 }
 
 /* --------------------- Owl Carousel How we work --------------------- */
@@ -763,6 +850,7 @@ a.more:hover {
 
 #owl-demo-post span {
 	font-size:18px;
+	z-index: 9999;
 }
 
 .customNavigation {
@@ -804,7 +892,7 @@ a.more:hover {
 
 @media(min-width:767px) {
 p {
-	 font-family: "Raleway", Helvetica,Arial,sans-serif;
+	font-family: "Raleway", Helvetica,Arial,sans-serif;
   	line-height:24px;
 	font-weight:400;
 	font-size:13px;
@@ -869,7 +957,7 @@ a {
 	}
 	
 	.intro-small {
-		display: inline-block; 
+		display:block; 
 		padding: 0 2%;
 	}
 	
