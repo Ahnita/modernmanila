@@ -12,6 +12,8 @@
 //
 //= require jquery_ujs
 //= require jquery
-//= require owl.carousel
+//= require imageloader
+//= require html5shiv
 //= require turbolinks
 //= require_tree .
+
