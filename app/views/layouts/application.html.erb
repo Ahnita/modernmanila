@@ -9,22 +9,15 @@
     <title>Moderne Manila</title>
   
     <!-- Fonts -->
-	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200,700' rel='stylesheet' type='text/css'>
+    <link href="https://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,200,700' rel='stylesheet' type='text/css'>
 	
     <!-- Bootstraps -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/normalize.css" rel="stylesheet">
 	<link href="https://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css" rel ="stylesheet">
 	<link href="https://code.jquery.com/ui/1.9.0/themes/smoothness/jquery-ui.css" rel ="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
 
-    <!-- Custom Theme CSS -->
-	<link href="css/bootstrap.css" rel="stylesheet">
-	<link href="css/prettyPhoto.css" rel="stylesheet">
-	<link href="css/animate.css" rel="stylesheet">
 
 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -49,8 +42,8 @@
 					<!-- Menu -->
 					<ul class="nav navbar-nav">
 						<li class="hidden"><a href="#top"></a></li> <!-- hidden item -->
-						<li class="page-scroll"><%= link_to "About", static_pages_index_path %></li>
-						<li class="page-scroll"><%= link_to "News", static_pages_galleries_path %></li>
+						<li class="page-scroll"><%= link_to "About", static_pages_about_path %></li>
+						<li class="page-scroll"><%= link_to "Calendar", static_pages_calendar_path %></li>
 						<li class="page-scroll"><%= link_to "Galleries", static_pages_galleries_path %></li>
 						<li class="page-scroll"><%= link_to "Tips", static_pages_tips_path %></li>
 						<li class="page-scroll"><%= link_to "Maps", static_pages_maps_path %></li>
@@ -93,16 +86,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 	
-	<script type="text/javascript"  src="js/bootstrap.min.js"></script>
-	<script type="text/javascript"  src="js/jquery-1.10.2.js"></script>
-	<script type="text/javascript"  src="js/jquery.isotope.min.js"></script>
-	<script type="text/javascript"  src="js/jquery.prettyPhoto.js"></script>
-	<script type="text/javascript"  src="js/waypoints.min.js"></script>
-	<script type="text/javascript"  src="js/jquery.counterup.min.js"></script>
-	<script type="text/javascript"  src="js/jquery.easing.1.3.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/main.js"></script>
 	
 	
 </body>

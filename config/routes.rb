@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   
   get 'static_pages/about'
 
-  get 'static_pages/news'
+  get 'static_pages/calendar'
 
   get 'static_pages/galleries'
 
