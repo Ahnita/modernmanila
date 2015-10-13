@@ -13,4 +13,8 @@
  *= require_tree .
  *= require_self
  *= require animate
+ *= require bootstrap
+ *= require font-awesome
+ *= require prettyPhoto
+ *= require normalize
  */
