@@ -14,7 +14,6 @@
 	* service block
 	* button
 	* copyright
-* owl carousel
 * animate
 * media query
 
@@ -150,7 +149,7 @@ a:hover {
 }
 
 
-/* --------------------- Landing Page INTRO --------------------- */
+/* --------------------- Landing Page /æ“INTRO --------------------- */
 
 
 .intro {
@@ -244,6 +243,23 @@ img.paintings {
 
 .row-about {
 	padding: 100px 30px 50px 50px;
+}
+
+.row-about .col-md-7 {
+	padding: 0px 30px 20px 50px;
+}
+
+.row-more .col-md-4 {
+	padding: 10px 15px 50px 15px;
+	background-color: #736357;
+}
+
+.row-more p {
+	color: #fff; 
+}
+
+.row-more h4 {
+	color: #f3b233;
 }
 
 .container {
