@@ -543,6 +543,11 @@ form p {
 
 /* --------------------- Button --------------------- */
 
+button h2 span {
+	color: #f3b233;
+	
+}
+
 a.more  {
 	background: #f3b233;
 	border-radius: 3px;
@@ -652,140 +657,6 @@ a.more:hover {
 	float:right;
 }
 
-
-/* --------------------- OWL CAROUSEL --------------------- */
-
-/* --------------------- Owl Carousel Header --------------------- */
-
-.customNavigation a.prev-header {
-	position: absolute; 
-	left:0; 
-	top:50%; 
-	cursor:pointer;
-	margin:0 15px;
-	text-decoration:none;
-	color:rgba(255,255,255,0.5);
-	font-size:36px;
-	float: left;
-	z-index: 9999;
-}
-
-.customNavigation a.next-header {
-	position:absolute; 
-	right:0; top:50%; 
-	cursor:pointer;
-	margin:0 15px;
-	text-decoration:none;
-	color:rgba(255,255,255,0.5);
-	font-size:36px;
-	float: left; 
-	z-index: 9999;
-}
-
-/* --------------------- Owl Carousel How we work --------------------- */
-
-.owl-theme .owl-controls{
-	margin-top: 10px;
-	text-align: center;
-}
-
-.owl-theme .owl-controls .owl-buttons div:first-child {
-	background:none !important; 
-	border:1px solid #f3b233; 
-	color:#f3b233;
-}
-
-.owl-theme .owl-controls .owl-buttons div{
-	color: #FFF;
-	display: inline-block;
-	zoom: 1;
-	*display: inline;/*IE7 life-saver */
-	margin: 5px;
-	padding: 3px 10px;
-	font-size: 12px;
-	background: #fff;
-}
-
-.owl-theme .owl-controls.clickable .owl-buttons div:hover{
-	filter: Alpha(Opacity=100);/*IE7 fix*/
-	opacity: 1;
-	text-decoration: none;
-}
-
-.owl-theme .owl-controls .owl-page{
-	display: inline-block;
-	zoom: 1;
-	*display: inline;/*IE7 life-saver */
-}
-
-.owl-theme .owl-controls .owl-page span{
-	display: block;
-	width: 12px;
-	height: 12px;
-	margin: 5px 7px;
-	background:#fff;
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	border-radius: 20px;
-	background: #fff;
-}
-
-.owl-theme .owl-controls .owl-page.active span,
-.owl-theme .owl-controls.clickable .owl-page:hover span{
-	background:#f3b233;
-	opacity: 1;
-}
-
-/* If PaginationNumbers is true */
-.owl-theme .owl-controls .owl-page span.owl-numbers{
-	height: auto;
-	width: auto;
-	color: #FFF;
-	padding: 2px 10px;
-	font-size: 12px;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
-}
-
-/* preloading images */
-.owl-item.loading{
-	min-height: 150px;
-	background: url(AjaxLoader.gif) no-repeat center center
-}
-
-
-/* --------------------- Owl Carousel News --------------------- */
-
-
-#owl-demo-post .item {
-	padding: 20px 0px 0px 0px;
-}
-
-#owl-demo-post span {
-	font-size:18px;
-	z-index: 9999;
-}
-
-.customNavigation {
-	text-align: center;
-}
-.customNavigation a.prev:first-child, .customNavigation a.prev-post:first-child {
-	background:none !important; 
-	color:#f3b233 !important;
-}
-
-.customNavigation a.prev , .customNavigation a.next, .customNavigation a.prev-post, .customNavigation a.next-post {
-	cursor:pointer;
-	padding:10px 15px;
-	border:1px solid #f3b233;
-	text-decoration:none;
-	color:#fff !important;
-	margin:5px;
-	background:#f3b233;
-	position: relative;
-	float: left;
-}
 
 
 /* --------------------- ANIMATE --------------------- */
