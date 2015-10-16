@@ -22,29 +22,27 @@
 				</div><!-- End Contacts -->
 			</div>
 
-			<div class="col-md-7" >
+			<div class="col-md-7 contact" >
 			
 				<!-- Contact Form -->
-				<form action="mail.php" method="post" class="animate-fadeIn">
-				
-					<!-- Name -->
-					<div class="col-md-6">
-						<input type="text" name="name" class="form-control" id="firstname" placeholder="Enter your name">
-					</div>
-					
-					<!-- Email -->
-					<div class="col-md-6">
-						<input type="text" name="email" class="form-control" id="email" placeholder="Enter your e-mail">
-					</div>
+				<%= flash[:notice] %>
 
-					<!-- Message -->
-					<div class="col-md-12">
-						<textarea rows="10" cols="45" name="mess" class="form-control" id="message"  placeholder="Your message"></textarea>
-					</div>
-					
-					<!-- Send -->
-					<p><input class="button" type="submit" value="SEND LETTER"></p>
-				</form><!-- End Contact Form -->
+				<%= form_tag("/static_pages/thank you") do %>
+				
+        	 	<div class="form-group">
+            		<%= label_tag :name, "Name" %>
+            		<%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
+        		</div>      
+        		<div class="form-group">
+            		<%= label_tag :email, "Email Address" %>
+            		<%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
+        		</div>
+        		<div class="form-group">
+            		<%= label_tag :message, "Message" %>
+            		<%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message" %>
+        		</div>      
+				<%= submit_tag "Send" %>   
+				<% end %><!-- End Contact Form -->
 			</div>
 		</div>
 	</section>
