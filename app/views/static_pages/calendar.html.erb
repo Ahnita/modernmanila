@@ -1,2 +1,10 @@
-<h1>StaticPages#news</h1>
-<p>Find me in app/views/static_pages/news.html.erb</p>
+<div class = "events">
+<%= link_to 'New Event', new_event_path %>
+<div id='calendar'>
+<script>
+ $('#calendar').fullCalendar(
+    events: '/events.json'
+	);
+</script>
+</div>
+</div>
