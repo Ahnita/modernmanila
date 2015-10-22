@@ -1,3 +1,19 @@
 // Place all the styles related to the events controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.events {
+	padding: 100px 20px 5px 20px;
+}
+
+th, td {
+	padding: 10px;
+}
+
+.title-field {
+	width: 100%;
+
+}
+
+.field-selections {
+	padding: 3px 10px 5px 20px;
+}
