@@ -1,252 +1,42 @@
 <!-- HEADER INTRO -->
+<!-- 1. Link to jQuery (1.8 or later), -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
+
+<!-- fotorama.css & fotorama.js. -->
+<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+
+<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+<%= csrf_meta_tags %>
 				
-    <section class="intro-page" style="height:200px; margin-top:100px !important; background:#8b806c">
-        <div class="container">
-			<div class="header-icon">
-				<i class="fa fa-quote-left"></i>
+<section class="intro-page" style="height:200px; margin-top:100px !important; background:#8b806c">
+    <div class="container">
+		<div class="col-md-offset-3 col-md-6 col-md-offset-3" style="text-align:center; padding: 0 35px">
+				
+			<!-- Page Title -->
+			<div class="page-title">
+				<h4>Galleries</h4>
+				<p>Contemporary art galleries within Metro Manila</p>
 			</div>
-			<div class="col-md-offset-3 col-md-6 col-md-offset-3" style="text-align:center; padding: 0 35px">
 				
-				<!-- Page Title -->
-				<div class="page-title">
-					<h4>Galleries</h4>
-					<p>20 of the best contemporary art galleries within Metro Manila</p>
-				</div>
-				
-			</div>
 		</div>
-	</section> 
+	</div>
+</section> 
 
-	<!-- PORTFOLIO -->
+<!-- PORTFOLIO -->
 
-	<section id="portfolio-page">
-		<div  class="container" >
-			<div class="row">
-
-
-				<div class="main col-lg-12">
-					<div class="portfolio">
-					
-						<!-- GALLERY 1 -->
-						<div class="col-md-4 col-lg-3">
-							<%= image_tag "Art underground.jpg", :size => "300x400", :alt => "Art Underground" %>
-							<span class="zooom"></span>
-							<div class="folio_title">
-								<h5><a href="#artundergroundpage">ART UNDERGROUND</a></h5>
-							</div>
-						</div>
-						
-						<!-- GALLERY 2 -->
-						<div class="entry web col-md-4 col-lg-3 work">
-							<a data-rel="prettyPhoto" href="images/assets/Altro Mondo/IMG_5428.jpg" >
-								<img src="images/assets/Altro Mondo/IMG_5428.jpg" alt="">
-								<span class="zooom"></span>
-							</a>
-							<div class="folio_title">
-								<h5><a href="#altromondopage">ALTRO MONDO</a></h5>
-							</div>
-						</div>
-						
-						<!-- GALLERY 3 -->
-						<div class="entry ill col-md-4 col-lg-3 work">
-							<a data-rel="prettyPhoto" href="images/assets/Ronac Art Center/IMG_5912.jpg" >
-								<img src="images/assets/Ronac Art Center/IMG_5912.jpg" alt="">
-								<span class="zooom"></span>
-							</a>
-							<div class="folio_title">
-								<h5><a href="#ronac art gallery page">RONAC ART CENTER</a></h5>
-							</div>
-						</div>
-
-						<!-- GALLERY 4 -->
-						<div class="entry logo col-md-4 col-lg-3 work">
-							<a data-rel="prettyPhoto" href="images/assets/Silverlens/IMG_6027.jpg">
-								<img src="images/assets/Silverlens/IMG_6027.jpg" alt="">
-								<span class="zooom"></span>
-							</a>
-							<div class="folio_title">
-								<h5><a href="#SILVERLENS PAGE">SILVERLENS</a></h5>
-							</div>
-						</div>
-
-						<!-- GALLERY 5 -->
-						<div class="entry logo col-md-4 col-lg-3 work">
-							<a data-rel="prettyPhoto" href="images/assets/Nova Art Gallery/P1110406.jpg">
-								<img src="images/assets/Nova Art Gallery/P1110406.jpg" alt="">
-								<span class="zooom"></span>
-							</a>
-							<div class="folio_title">
-								<h5><a href="#NOVA GALLERY PAGE">NOVA GALLERY</a></h5>
-							</div>
-						</div>
-
-						<!-- GALLERY 6 -->
-						<div class="entry print col-md-4 col-lg-3 work">
-							<a data-rel="prettyPhoto" href="images/portfolio/work6.jpg">
-								<img src="images/portfolio/work6.jpg" alt="">
-								<span class="zooom"></span>
-							</a>
-							<div class="folio_title">
-								<h5><a href="#ART CUBE PAGE">ART CUBE</a></h5>
-							</div>
-						</div>
-
-						<!-- GALLERY 7 -->
-						<div class="entry print col-md-4 col-lg-3 work">
-							<a data-rel="prettyPhoto" href="images/portfolio/work6.jpg">
-								<img src="images/portfolio/work6.jpg" alt="">
-								<span class="zooom"></span>
-							</a>
-							<div class="folio_title">
-								<h5><a href="#AYALA MUSEUM PAGE">AYALA MUSEUM</a></h5>
-							</div>
-						</div>
-
-						<!-- GALLERY 8 -->
-						<div class="entry print col-md-4 col-lg-3 work">
-							<a data-rel="prettyPhoto" href="images/portfolio/work6.jpg">
-								<img src="images/portfolio/work6.jpg" alt="">
-								<span class="zooom"></span>
-							</a>
-							<div class="folio_title">
-								<h5><a href="#MO SPACE PAGE">MO SPACE</a></h5>
-							</div>
-						</div>
-
-						<!-- GALLERY 9 -->
-						<div class="entry print col-md-4 col-lg-3 work">
-							<a data-rel="prettyPhoto" href="images/portfolio/work6.jpg">
-								<img src="images/portfolio/work6.jpg" alt="">
-								<span class="zooom"></span>
-							</a>
-							<div class="folio_title">
-								<h5><a href="#DRAWING ROOM PAGE">DRAWING ROOM</a></h5>
-							</div>
-						</div>
-
-						<!-- GALLERY 10 -->
-						<div class="entry print col-md-4 col-lg-3 work">
-							<a data-rel="prettyPhoto" href="images/assets/Finale Art File/P1110385.jpg">
-								<img src="images/assets/Finale Art File/P1110385.jpg" alt="">
-								<span class="zooom"></span>
-							</a>
-							<div class="folio_title">
-								<h5><a href="#FINALE ART FILE PAGE">FINALE ART FILE</a></h5>
-							</div>
-						</div>
-
-						<!-- GALLERY 11 -->
-						<div class="entry print col-md-4 col-lg-3 work">
-							<a data-rel="prettyPhoto" href="images/portfolio/work6.jpg">
-								<img src="images/portfolio/work6.jpg" alt="">
-								<span class="zooom"></span>
-							</a>
-							<div class="folio_title">
-								<h5><a href="#CONTEMPORARY ART MUSEUM MANILA PAGE">CONTEMPORARY ART MUSEUM MANILA</a></h5>
-							</div>
-						</div>
-
-						<!-- GALLERY 12 -->
-						<div class="entry print col-md-4 col-lg-3 work">
-							<a data-rel="prettyPhoto" href="images/assets/Vinyl on Vinyl/IMG_6049.jpg">
-								<img src="images/assets/Vinyl on Vinyl/IMG_6049.jpg" alt="">
-								<span class="zooom"></span>
-							</a>
-							<div class="folio_title">
-								<h5><a href="#VINYL ON VINYL PAGE">VINYL ON VINYL</a></h5>
-							</div>
-						</div>
-
-						<!-- GALLERY 13 -->
-						<div class="entry print col-md-4 col-lg-3 work">
-							<a data-rel="prettyPhoto" href="images/portfolio/work6.jpg">
-								<img src="images/portfolio/work6.jpg" alt="">
-								<span class="zooom"></span>
-							</a>
-							<div class="folio_title">
-								<h5><a href="#TIN AW Art Gallery PAGE">TIN AW ART GALLERY</a></h5>
-							</div>
-						</div>
-
-						<!-- GALLERY 14 -->
-						<div class="entry print col-md-4 col-lg-3 work">
-							<a data-rel="prettyPhoto" href="images/portfolio/work6.jpg">
-								<img src="images/portfolio/work6.jpg" alt="">
-								<span class="zooom"></span>
-							</a>
-							<div class="folio_title">
-								<h5><a href="#GALERIA NICOLAS PAGE">GALERIA NICOLAS GALLERY</a></h5>
-							</div>
-						</div>
-
-						<!-- GALLERY 15 -->
-						<div class="entry print col-md-4 col-lg-3 work">
-							<a data-rel="prettyPhoto" href="images/portfolio/work6.jpg">
-								<img src="images/portfolio/work6.jpg" alt="">
-								<span class="zooom"></span>
-							</a>
-							<div class="folio_title">
-								<h5><a href="#ARTES ORIENTES PAGE">ARTES ORIENTES</a></h5>
-							</div>
-						</div>
-
-						<!-- GALLERY 16 -->
-						<div class="entry print col-md-4 col-lg-3 work">
-							<a data-rel="prettyPhoto" href="images/portfolio/work6.jpg">
-								<img src="images/portfolio/work6.jpg" alt="">
-								<span class="zooom"></span>
-							</a>
-							<div class="folio_title">
-								<h5><a href="#WEST GALLERY PAGE">WEST GALLERY</a></h5>
-							</div>
-						</div>
-
-						<!-- GALLERY 17 -->
-						<div class="entry print col-md-4 col-lg-3 work">
-							<a data-rel="prettyPhoto" href="images/portfolio/work6.jpg">
-								<img src="images/portfolio/work6.jpg" alt="">
-								<span class="zooom"></span>
-							</a>
-							<div class="folio_title">
-								<h5><a href="#GALERIE JOAQUIN PAGE">GALLERY JOAQUIN</a></h5>
-							</div>
-						</div>
-
-						<!-- GALLERY 18 -->
-						<div class="entry print col-md-4 col-lg-3 work">
-							<a data-rel="prettyPhoto" href="images/assets/Pinto Museum/P1110628.jpg">
-								<img src="images/assets/Pinto Museum/P1110628.jpg" alt="">
-								<span class="zooom"></span>
-							</a>
-							<div class="folio_title">
-								<h5><a href="#PINTO ART GALLERY PAGE">PINTO ART GALLERY</a></h5>
-							</div>
-						</div>
-
-						<!-- GALLERY 19 -->
-						<div class="entry print col-md-4 col-lg-3 work">
-							<a data-rel="prettyPhoto" href="images/portfolio/work6.jpg">
-								<img src="images/portfolio/work6.jpg" alt="">
-								<span class="zooom"></span>
-							</a>
-							<div class="folio_title">
-								<h5><a href="#GALERIA DUEMILA PAGE">GALERIA DUEMILA</a></h5>
-							</div>
-						</div>
-
-						<!-- GALLERY 20 -->
-						<div class="entry print col-md-4 col-lg-3 work">
-							<a data-rel="prettyPhoto" href="images/portfolio/work6.jpg">
-								<img src="images/portfolio/work6.jpg" alt="">
-								<span class="zooom"></span>
-							</a>
-							<div class="folio_title">
-								<h5><a href="#GALERIE STEPHANIE PAGE">GALERIE STEPHANIE</a></h5>
-							</div>
-						</div>
-
-					</div>
-				</div> 
+<section id="portfolio-page">
+	<div  class="container" >
+		<div class="row">
+			<div class="fotorama">
+  				<img src="http://s.fotorama.io/1.jpg">
+  				<img src="http://s.fotorama.io/2.jpg">
+  				<img src="https://instagram.com/p/9VenUeBnXY">
+  				<%= image_tag "paintings.jpg", :size => "100%x400", :alt => "paintings" %>
 			</div>
+
+				
 		</div>
-	</section>
+	</div>
+</section>
