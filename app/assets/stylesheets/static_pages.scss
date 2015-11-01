@@ -262,10 +262,15 @@ img.paintings {
 	color: #f3b233;
 }
 
+.fotorama {
+	padding: 5px 10px 10px 10px;
+	width: 100%;
+}
+
 .container {
 	margin:0 auto;
 	z-index: 999;
-	padding: 20px 20px 20px;
+	padding: 10px 10px 10px;
 	font-size:18px;
 	z-index: 9999;
 }
@@ -314,35 +319,12 @@ map {
 
 .replay {margin-left:50px;}
 
-/* --------------------- PORTFOLIO --------------------- */
+/* --------------------- Gallery --------------------- */
 
-#portfolio  .work {
-	margin-top:25px; 
-	height:300px; 
-	overflow:hidden;
-}
-
-#portfolio img {
-	padding: 1px; 
-	height: 300px;
+.row-gallery {
+	padding: 10px 10px 50px 10px;
+	height: 100%;
 	width: 100%;
-}
-
-.work:hover .zooom {
-	background:rgba(243,178,51,0.7) url(../images/zoom.png) no-repeat center;
-	position: absolute;
-	top: 0px;
-	right: 15px;
-	bottom: 0px;
-	left: 15px;
-	height: 300px; 
-	overflow:hidden;
-	content: '';
-	-webkit-transition:all .3s ease-in-out;
-	-moz-transition:all .3s ease-in-out;
-	-ms-transition:all .3s ease-in-out;
-	-o-transition:all .3s ease-in-out;
-	transition:all .3s ease-in-out;
 }
 
 nav.primary {
