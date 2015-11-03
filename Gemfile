@@ -26,6 +26,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 #Calendar
 gem 'fullcalendar-rails'
 gem 'momentjs-rails'
+gem "simple_calendar"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
