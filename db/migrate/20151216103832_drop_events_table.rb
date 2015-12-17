@@ -4,6 +4,6 @@ class DropEventsTable < ActiveRecord::Migration
   end
 
   def down
-  	raise: ActiveRecord::IrreversibleMigration
+  	raise ActiveRecord :IrreversibleMigration
   end
 end
