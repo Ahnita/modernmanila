@@ -5,6 +5,7 @@
 <!-- fotorama.css & fotorama.js. -->
 <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 
 <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -28,7 +29,7 @@
 
 <div class="row-gallery">
 	<div class="fotorama">
-		<%= image_tag "BGC.jpg", :size => "100%x200", :alt => "BGC Wall Mural" %>
+		<%= image_tag "BGC.jpg", :size => "100%x300", :alt => "BGC Wall Mural" %>
   		<%= image_tag "BGC2.jpg", :size => "100%x300", :alt => "BGC Wall Mural" %>
   		<%= image_tag "BGC3.jpg", :size => "100%x300", :alt => "BGC trees" %>
   		<%= image_tag "BGC4.jpg", :size => "100%x300", :alt => "BGC Wall Mural" %>
