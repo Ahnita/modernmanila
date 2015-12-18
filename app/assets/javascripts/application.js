@@ -15,7 +15,5 @@
 //= require imageloader
 //= require html5shiv
 //= require turbolinks
-//= require fullcalendar
-//= require gcal
 //= require_tree .
 
