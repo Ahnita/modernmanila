@@ -8,19 +8,6 @@ $(window).load(function() {
 
 $(document).ready(function(){
 
-//Skillbar
-	$('.skillbar').waypoint(function(){
-			$(this).find('.skillbar-bar').animate({ width: $(this).attr('data-percent') }, 1500 );
-		}, {
-		offset: '90%'
-		});
-
-//Counter
-$('.counter').counterUp({
-            delay: 10,
-            time: 1000
-        });
-});
     
 	
 
@@ -48,164 +35,6 @@ $(function() {
 
 
 
-// Header carousel
- $(document).ready(function() {
-  var owl = $("#owl-demo-header");
-
-      owl.owlCarousel({
- 
-      autoPlay: false, //Set AutoPlay to 3 seconds
- 
-      items : 1,
-      itemsDesktop : [1199,1],
-      itemsDesktopSmall : [979,1],
-	   itemsTablet: [600,1], //1 items between 600 and 0;
-      itemsMobile : false,
- pagination:false,
-   slideSpeed : 500
-   
-  });
-  
-   // Custom Navigation Events
-      $(".next-header").click(function(){
-        owl.trigger('owl.next');
-      })
-      $(".prev-header").click(function(){
-        owl.trigger('owl.prev');
-      })
-});
-
-  
-  
-// How we work carousel
- $(document).ready(function() {
-  var owl = $("#owl-demo");
-
-      owl.owlCarousel({
- 
-      autoPlay: false, //Fasle Autoplay
- 
-      items : 1,
-      itemsDesktop : [1199,1],
-      itemsDesktopSmall : [979,1],
-	  itemsTablet: [600,1], //1 items between 600 and 0;
-      itemsMobile : false,
- pagination:false,
-   slideSpeed : 500
-   
-  });
- // Custom Navigation Events
-      $(".next").click(function(){
-        owl.trigger('owl.next');
-      })
-      $(".prev").click(function(){
-        owl.trigger('owl.prev');
-      })
-}); 
-  
-
-
-
-// Post carousel
-$(document).ready(function() {
-
- var owl = $("#owl-demo-post");
-
-      owl.owlCarousel({
- 
-      items : 4, //4 items above 1000px browser width
-      itemsDesktop : [1000,2], //2 items between 1000px and 901px
-      itemsDesktopSmall : [900,2], // 2 items betweem 900px and 601px
-      itemsTablet: [600,1], //1 items between 600 and 0;
-      itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
-	   pagination:false,
-       slideSpeed : 500
-      });
-
-      // Custom Navigation Events
-      $(".next-post").click(function(){
-        owl.trigger('owl.next');
-      })
-      $(".prev-post").click(function(){
-        owl.trigger('owl.prev');
-      })
-     
-    });
-	
-	
-	
-// Testimonials carousel
-$(document).ready(function() {
-
-      var owl = $("#owl-demo-testimonials");
-
-      owl.owlCarousel({
-	  
-	   autoPlay: true, //Set Autoplay
- 
-      items : 1, //3 items above 1000px browser width
-      itemsDesktop : [1000,1], //2 items between 1000px and 901px
-      itemsDesktopSmall : [900,1], // 2 items betweem 900px and 601px
-      itemsTablet: [600,1], //1 items between 600 and 0;
-      itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
-	   pagination:true,
-       slideSpeed : 500
-      });
- });
-
- 
- 
-//Portfolio Isotope
-	var $container = $('.portfolio');
-	$container.isotope({
-		filter: '*',
-		animationOptions: {
-			duration: 750,
-			easing: 'linear',
-			queue: false,
-		}
-	});
-
-	$('nav.primary ul a').click(function(){
-		var selector = $(this).attr('data-filter');
-		$container.isotope({
-			filter: selector,
-			animationOptions: {
-				duration: 750,
-				easing: 'linear',
-				queue: false,
-			}
-		});
-	  return false;
-	});
-
-	var $optionSets = $('nav.primary ul'),
-	       $optionLinks = $optionSets.find('a');
-	 
-	       $optionLinks.click(function(){
-	          var $this = $(this);
-		  // don't proceed if already selected
-		  if ( $this.hasClass('selected') ) {
-		      return false;
-		  }
-	   var $optionSet = $this.parents('nav.primary ul');
-	   $optionSet.find('.selected').removeClass('selected');
-	   $this.addClass('selected'); 
-	});
-	
-	
-	
-//PrettyPhoto 
-jQuery(document).ready(function(){
-	jQuery('a[data-gal]').each(function() {
-	    jQuery(this).attr('rel', jQuery(this).data('gal'));
-	});  	
-	jQuery("a[data-rel^='prettyPhoto']").prettyPhoto({animationSpeed:'slow',theme:'light_square',slideshow:false,overlay_gallery: false,social_tools:false,deeplinking:false});
-}); 
-
-
- 
- 
 // Animate
 jQuery(function($){
 	$(document).ready(function(){
@@ -793,24 +622,9 @@ jQuery(function($){
 		offset: '75%'
 	});
 	
-//slideOutRight
-		
-	$('.animate-slideOutRight').waypoint(function() {
-		$('.animate-slideOutRight').addClass('animated slideOutRight');
-	}, {
-		offset: '75%'
-	});
-	
-//slideOutUp
-		
-	$('.animate-slideOutUp').waypoint(function() {
-		$('.animate-slideOutUp').addClass('animated slideOutUp');
-	}, {
-		offset: '75%'
-	});
+
 	
 	
 	
-	});
-});
+
 
