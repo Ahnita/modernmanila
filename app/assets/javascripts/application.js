@@ -12,8 +12,8 @@
 //
 //= require jquery_ujs
 //= require jquery
-//= require imageloader
 //= require html5shiv
 //= require turbolinks
+//= require fotorama
 //= require_tree .
 
