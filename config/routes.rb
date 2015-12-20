@@ -3,8 +3,6 @@ Rails.application.routes.draw do
   resources :events
   get 'static_pages/about'
 
-  get 'static_pages/calendar'
-
   get 'static_pages/galleries'
 
   get 'static_pages/tips'
