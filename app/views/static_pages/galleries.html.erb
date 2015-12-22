@@ -1,37 +1,221 @@
-<!-- HEADER INTRO -->
-<!-- 1. Link to jQuery (1.8 or later), -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
+<div id="carousel-ahnita" class="carousel slide" data-ride="carousel">
 
-<!-- fotorama.css & fotorama.js. -->
-<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
-<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-ahnita" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-ahnita" data-slide-to="1"></li>
+            <li data-target="#carousel-ahnita" data-slide-to="2"></li>
+            <li data-target="#carousel-ahnita" data-slide-to="3"></li>
+            <li data-target="#carousel-ahnita" data-slide-to="4"></li>
+            <li data-target="#carousel-ahnita" data-slide-to="5"></li>
+            <li data-target="#carousel-ahnita" data-slide-to="6"></li>
+            <li data-target="#carousel-ahnita" data-slide-to="7"></li>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <%= image_tag "BGC.jpg", :size => "100%x200", :alt => "BGC Wall Mural" %>
+                <div class="carousel-caption">
+                  <h1>Wall Mural</h1>
+                  <p>BGC</p>
+                </div>
+            </div>
 
-<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-<%= csrf_meta_tags %>
-				
-<section class="intro-page" style="height:200px; margin-top:100px !important; background:#8b806c">
-    <div class="container">
-		<div class="col-md-offset-3 col-md-6 col-md-offset-3" style="text-align:center; padding: 0 35px">
-				
-			<!-- Page Title -->
-			<div class="page-title">
-				<h4>Gallery</h4>
-				<p>Pictures taken within Metro Manila, from galleries to museums to trendy hotspots.</p>
-			</div>
-				
-		</div>
-	</div>
-</section> 
+            <div class="item">
+              <%= image_tag "BGC2.jpg", :size => "100%x300", :alt => "BGC Wall Mural" %>
+                <div class="carousel-caption">
+                <h1>Wall Mural</h1>
+                <p>BGC</p> 
+                </div>
+            </div>
 
-<!-- PORTFOLIO -->
+            <div class="item">
+              <%= image_tag "BGC3.jpg", :size => "100%x300", :alt => "BGC trees" %>
+                <div class="carousel-caption">
+                <h1>BGC</h1>
+                <p>BGC Trees</p>
+                </div>
+            </div> <!-- end of item -->
+
+            <div class="item">
+              <%= image_tag "BGC4.jpg", :size => "100%x300", :alt => "BGC Wall Mural" %>
+                <div class="carousel-caption">
+                  <h1>BGC</h1>
+                  <p> Wall Mural</p>
+                </div>
+            </div>
+
+            <div class="item">
+              <%= image_tag "BGC5.jpg", :size => "100%x300", :alt => "BGC Wall Mural" %>
+                <div class="carousel-caption">
+                <h1>BGC</h1>
+                <p>Wall Mural</p>
+                </div>
+            </div> <!-- end of item -->
+
+            <div class="item">
+              <%= image_tag "Restock.jpg", :size => "100%x300", :alt => "Restock Cafe" %>
+                <div class="carousel-caption">
+                <h1>Restock Cafe</h1>
+                <p>Makati</p>
+                </div>
+            </div> <!-- end of item -->
+
+            <div class="item">
+              <%= image_tag "Ronac.jpg", :size => "100%x300", :alt => "Ronac Art Center" %>
+                <div class="carousel-caption">
+                <h1>Ronac Art Center</h1>
+                <p>Ortigas</p>
+                </div>
+            </div> <!-- end of item -->
+
+            <div class="item">
+              <%= image_tag "Ronac.jpg", :size => "100%x300", :alt => "Ronac Art Center" %>
+                <div class="carousel-caption">
+                <h1>Ronac Art Center</h1>
+                <p>Ortigas</p>
+                </div>
+            </div> <!-- end of item -->
+
+            <div class="item">
+              <%= image_tag "silverlens.jpg", :size => "100%x300", :alt => "Silverlens" %>
+                <div class="carousel-caption">
+                <h1>Silverlens Gallery</h1>
+                <p>Makati</p>
+                </div>
+            </div> <!-- end of item -->
+
+            <div class="item">
+              <%= image_tag "silverlens.jpg", :size => "100%x300", :alt => "Silverlens" %>
+                <div class="carousel-caption">
+                <h1>Silverlens Gallery</h1>
+                <p>Makati</p>
+                </div>
+            </div> <!-- end of item -->
+
+            <div class="item">
+              <%= image_tag "TheCurator.jpg", :size => "100%x300", :alt => "The Curator" %>
+                <div class="carousel-caption">
+                <h1>The Curator</h1>
+                <p>Makati</p>
+                </div>
+            </div> <!-- end of item -->
+
+            <div class="item">
+              <%= image_tag "SecretFresh.jpg", :size => "100%x300", :alt => "Secret Fresh" %>
+                <div class="carousel-caption">
+                <h1>Secret Fresh</h1>
+                <p>Ortigas</p>
+                </div>
+            </div> <!-- end of item -->
+
+            <div class="item">
+              <%= image_tag "altromondo.jpg", :size => "100%x300", :alt => "Altro Mondo" %>
+                <div class="carousel-caption">
+                <h1>Altro Mondo</h1>
+                <p>Makati</p>
+                </div>
+            </div> <!-- end of item -->
+
+            <div class="item">
+              <%= image_tag "PintoMuseum.jpg", :size => "100%x300", :alt => "Pinto Museum" %>
+                <div class="carousel-caption">
+                <h1>Pinto Museum</h1>
+                <p>Antipolo</p>
+                </div>
+            </div> <!-- end of item -->
+
+            <div class="item">
+              <%= image_tag "PintoMuseum2.jpg", :size => "100%x300", :alt => "Pinto Museum" %>
+                <div class="carousel-caption">
+                <h1>Pinto Museum</h1>
+                <p>Antipolo</p>
+                </div>
+            </div> <!-- end of item -->
+
+            <div class="item">
+              <%= image_tag "Art Underground.jpg", :size => "100%x300", :alt => "Art Underground" %>
+                <div class="carousel-caption">
+                <h1>Art Underground</h1>
+                <p>Mandaluyong</p>
+                </div>
+            </div> <!-- end of item -->
+
+            <div class="item">
+              <%= image_tag "Finale.jpg", :size => "100%x300", :alt => "Finale Art File"%>
+                <div class="carousel-caption">
+                <h1>Finale Art File</h1>
+                <p>Makati</p>
+                </div>
+            </div> <!-- end of item -->
+
+            <div class="item">
+              <%= image_tag "LePetiteSouffle.jpg", :size => "100%x300", :alt => "Le Petite Souffle" %>
+                <div class="carousel-caption">
+                <h1>Le Petite Souffle</h1>
+                <p>Makati</p>
+                </div>
+            </div> <!-- end of item -->
+
+            <div class="item">
+              <%= image_tag "Makatiview.jpg", :size => "100%x300", :alt => "View of Makati from Mandaluyong" %>
+                <div class="carousel-caption">
+                <h1>View of Makati from Mandaluyong</h1>
+                <p>Makati</p>
+                </div>
+            </div> <!-- end of item -->
+
+            <div class="item">
+              <%= image_tag "NovaGallery.jpg", :size => "100%x300", :alt => "Nova Gallery" %>
+                <div class="carousel-caption">
+                <h1>Nova Gallery</h1>
+                <p>Makati</p>
+                </div>
+            </div> <!-- end of item -->
+
+            <div class="item">
+              <%= image_tag "TobysEstate.jpg", :size => "100%x300", :alt => "Toby's Estate" %>
+                <div class="carousel-caption">
+                <h1>Toby's Estate</h1>
+                <p>Makati</p>
+                </div>
+            </div> <!-- end of item -->
+
+            <div class="item">
+              <%= image_tag "VinylonVinyl.jpg", :size => "100%x300", :alt => "Vinyl on Vinyl" %>
+                <div class="carousel-caption">
+                <h1>Vinyl on Vinyl</h1>
+                <p>Makati</p>
+                </div>
+            </div> <!-- end of item -->
+
+            <div class="item">
+              <%= image_tag "VinylonVinyl.jpg", :size => "100%x300", :alt => "Vinyl on Vinyl" %>
+                <div class="carousel-caption">
+                <h1>Toby's Estate</h1>
+                <p>Makati</p>
+                </div>
+            </div> <!-- end of item -->
+
+
+        </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-ahnita" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-ahnita" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    </div>
 
 <div class="row-gallery centered">
 	<div class="fotorama" data-nav="thumbs" data-fit="contain">
 		<%= image_tag "BGC.jpg", :size => "100%x300", :alt => "BGC Wall Mural" %>
 		<%= image_tag "BGC2.jpg", :size => "100%x300", :alt => "BGC Wall Mural" %>
-  		<%= image_tag "BGC2.jpg", :size => "100%x300", :alt => "BGC Wall Mural" %>
   		<%= image_tag "BGC3.jpg", :size => "100%x300", :alt => "BGC trees" %>
   		<%= image_tag "BGC4.jpg", :size => "100%x300", :alt => "BGC Wall Mural" %>
   		<%= image_tag "BGC5.jpg", :size => "100%x300", :alt => "BGC Wall Mural" %>
